@@ -1,5 +1,5 @@
-// Todo App
+# Todo App
 
-// Deployment link
+## Deployment link
 
 https://todoapp-week1.netlify.app
