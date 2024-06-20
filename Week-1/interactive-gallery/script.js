@@ -3,32 +3,32 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       thumbnail: "assets/img1_thumbnail.png",
       full: "assets/img1.jpg",
-      caption: "Caption 1",
+      caption: "Nice city lights",
     },
     {
       thumbnail: "assets/img2_thumbnail.png",
       full: "assets/img2.jpg",
-      caption: "Caption 2",
+      caption: "Sky and mountains",
     },
     {
-      thumbnail: "assets/img3_thumbnail.png",
+      thumbnail: "assets/img3_thumbnail.jpg",
       full: "assets/img3.jpg",
-      caption: "Caption 3",
+      caption: "Yellow car",
     },
     {
-      thumbnail: "assets/img1_thumbnail.png",
-      full: "assets/img1.jpg",
-      caption: "Caption 1",
+      thumbnail: "assets/img4_thumbnail.jpg",
+      full: "assets/img4.jpg",
+      caption: "Green field",
     },
     {
-      thumbnail: "assets/img2_thumbnail.png",
-      full: "assets/img2.jpg",
-      caption: "Caption 2",
+      thumbnail: "assets/img5_thumbnail.jpg",
+      full: "assets/img5.jpg",
+      caption: "Fruits",
     },
     {
-      thumbnail: "assets/img3_thumbnail.png",
-      full: "assets/img3.jpg",
-      caption: "Caption 3",
+      thumbnail: "assets/img6_thumbnail.jpg",
+      full: "assets/img6.jpg",
+      caption: "Camera",
     },
   ];
 
