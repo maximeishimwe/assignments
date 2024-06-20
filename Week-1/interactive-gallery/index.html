@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/35790f755c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="app-container">
+      <div class="gallery-container" id="gallery-container">
+        <!-- Thumbnails will be dynamically added here -->
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <span id="close" class="close fa-solid fa-user"></span>
+        <img class="lightbox-image" id="lightbox-image" />
+        <div class="caption" id="caption"></div>
+        <button class="prev" id="prev">◀️</button>
+        <button class="next" id="next">▶️</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

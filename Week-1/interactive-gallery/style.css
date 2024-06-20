@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-container img {
+  max-width: 25%; /* Ensure images do not exceed 25% of the container's width minus gap */
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin: 1em;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-container img,
+.lightbox img {
+  border-radius: 1em;
+}
+
+/* Lightbox overlay styling */
+.lightbox {
+  display: none; /* Initially hide the lightbox */
+  position: fixed; /* Fixed position to cover the entire screen */
+  z-index: 1000; /* High z-index to ensure it's on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.904);
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Full-size image in the lightbox */
+.lightbox-image {
+  max-width: 80%;
+  max-height: 80%;
+  margin: auto;
+}
+
+.caption {
+  color: #ffdb00;
+  font-size: 1.1em;
+  padding: 10px;
+  text-align: center;
+  background: transparent;
+}
+
+.close {
+  position: absolute; /* Position close button absolutely */
+  top: 10px;
+  right: 1em;
+  color: #ffdb00;
+  font-size: 2em;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Center vertically */
+  margin-top: -22px; /* Negative margin to align properly */
+  font-size: 24px;
+  user-select: none; /* Disable text selection for navigation buttons */
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  background-color: transparent;
+  border: none;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover,
+.next:hover,
+.close:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+}
