@@ -6,7 +6,7 @@ const apiUrl = "https://api.adviceslip.com/advice";
 const fetchAdvice = async () => {
   const data = await (await fetch(apiUrl)).json();
   id.innerText = data.slip.id;
-  txt.innerText = data.slip.advice;
+    txt.innerHTML = `&ldquo; ${data.slip.advice} &rdquo;`;
 };
 
 generateBtn.addEventListener("click", fetchAdvice);

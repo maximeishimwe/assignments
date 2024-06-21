@@ -28,17 +28,18 @@ body {
   width: 375px;
   background-color: var(--Dark-Grayish-Blue);
   border-radius: 1em;
-  padding: 2em 4em;
+  padding: 2em 48px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  position: relative;
 }
 
 .advice-container > div:first-child {
   color: var(--Neon-Green);
   letter-spacing: 4px;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   font-size: 13px;
 }
 
@@ -47,18 +48,36 @@ body {
   font-size: 28px;
 }
 
+.divider {
+  margin: 40px auto;
+}
+
+button img {
+  width: 24px;
+  height: 24px;
+}
+
 button {
   cursor: pointer;
   border: none;
-  padding: 1em;
+  padding: 20px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: var(--Neon-Green);
+  position: absolute;
+  bottom: -30px;
 }
 
 button:hover {
   transition: all 0.3s ease-in-out;
   box-shadow: 0 0 1em var(--Neon-Green);
+}
+
+@media (max-width: 500px) {
+  .advice-container {
+    width: 343px;
+    padding: 2em;
+  }
 }
