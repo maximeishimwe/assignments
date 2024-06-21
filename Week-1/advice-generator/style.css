@@ -39,7 +39,7 @@ body {
   color: var(--Neon-Green);
   letter-spacing: 4px;
   margin-bottom: 1em;
-  font-size: 1em;
+  font-size: 13px;
 }
 
 #advice-text {
@@ -47,3 +47,18 @@ body {
   font-size: 28px;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  padding: 1em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--Neon-Green);
+}
+
+button:hover {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 1em var(--Neon-Green);
+}
