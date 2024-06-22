@@ -29,7 +29,6 @@ const Superhero = function (
   secretIdentity,
   powers,
   weakness,
-  revealIdentity
 ) {
   this.name = name;
   this.secretIdentity = secretIdentity;
@@ -56,6 +55,7 @@ Superhero.prototype.revealIdentity = function () {
   console.log(`secret identity: ${this.secretIdentity}`);
 };
 
-// We have access to usePower method even though it is not present on the object itself
+// We have access to usePower method even though it is not present on the object itself but rather on its prototype
+// Object have access to properties present on its prototype
 flyer.usePower("flying"); // The Flyer is flying
 flyer.revealIdentity(); // secret identity: secretary
