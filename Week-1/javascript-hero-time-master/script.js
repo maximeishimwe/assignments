@@ -29,6 +29,8 @@ Clock.prototype.getFormattedTime = function () {
   }${period}`;
 };
 
+// Implemented two timezones UTC and local
+
 Clock.prototype.updateTime = function () {
   let date = new Date();
   if (this.timeZone === "UTC") {
@@ -92,7 +94,3 @@ document.querySelector("#colorPicker").addEventListener("input", function () {
   const color = this.value;
   customizeClock({ color: color });
 });
-
-clock.timeZone = "local";
-
-displayClock();

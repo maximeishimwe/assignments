@@ -63,13 +63,3 @@ select:focus {
   border-color: #2196f3;
 }
 
-/* Arrow icon */
-select::after {
-  content: "\25BC";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  pointer-events: none;
-  color: #666666;
-}
