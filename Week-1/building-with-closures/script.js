@@ -1,6 +1,6 @@
 // 1. Object Methods and this
 
-console.log("### 1. Object Methods and this");
+console.log("// 1. Object Methods and this");
 
 // Create a Person object
 const Person = {
@@ -38,7 +38,7 @@ const btn = document.querySelector("#btn");
 
 // event listener with a regular function
 function handleClick() {
-  console.log("### 2. Event Handlers and this");
+  console.log("// 2. Event Handlers and this");
 
   console.log("Event using regular function:");
   console.log("this.id:", this.id); // "btn"
@@ -57,7 +57,7 @@ btn.addEventListener("click", arrowHandleClick);
 
 // 3. Private Data with Closures and this
 
-console.log("### 3. Private Data with Closures and this");
+console.log("// 3. Private Data with Closures and this");
 
 function createCounter() {
   let count = 0;
@@ -82,7 +82,7 @@ console.log(counter.getCount()); // 1
 
 // 4. Reusable Component with Closure and this
 
-console.log("### 4. Reusable Component with Closure and this");
+console.log("// 4. Reusable Component with Closure and this");
 
 document.querySelector("#start-timer").addEventListener("click", function () {
   const timerElementId = "timer";
