@@ -1,8 +1,13 @@
 // 1. Time Object Basics
+
+console.log("// 1. Time Object Basics");
+
 const date = new Date();
 console.log(`${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`);
 
 // 2. Object-Oriented Clock
+
+console.log("// 2. Object-Oriented Clock");
 const Clock = function (hours, minutes, seconds) {
   this.hours = hours;
   this.minutes = minutes;
@@ -15,6 +20,9 @@ const clock = new Clock(date.getHours(), date.getMinutes(), date.getSeconds());
 console.log(clock);
 
 // 3. Time Formatting
+
+console.log("// 3. Time Formatting");
+
 Clock.prototype.getFormattedTime = function () {
   const hours = this.isFormat24 ? this.hours : this.hours % 12 || 12;
   const period = this.isFormat24 ? "" : this.hours >= 12 ? " PM" : " AM";
@@ -30,7 +38,6 @@ Clock.prototype.getFormattedTime = function () {
 };
 
 // Implemented two timezones UTC and local
-
 Clock.prototype.updateTime = function () {
   let date = new Date();
   if (this.timeZone === "UTC") {
